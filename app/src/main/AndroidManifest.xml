@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.usmankhi18.attendancetrackingsystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Admin Dashboard Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".attendance.ViewAttendanceActivity" />
+        <activity android:name=".attendance.AttendanceDetailActivity" />
+        <activity android:name=".attendance.TakeAttendanceActivity" />
+        <activity android:name=".courses.ViewCoursesActivity" />
+        <activity android:name=".courses.AddCoursesActivity" />
+        <activity android:name=".courses.UpdateCoursesActivity" />
+        <activity android:name=".courses.DeleteCoursesActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".teacher.AddTeacherActivity" />
+        <activity android:name=".teacher.ViewTeachersActivity" />
+        <activity android:name=".teacher.UpdateTeacherActivity" />
+        <activity android:name=".teacher.DeleteTeacherActivity" />
+        <activity android:name=".student.DeleteStudentActivity" />
+        <activity android:name=".student.UpdateStudentActivity" />
+        <activity android:name=".student.AddStudentActivity" />
+        <!-- Student Dashboard Activity -->
+        <activity
+            android:name=".StudentDashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".student.ViewStudentActivity" />
+        <!-- Teacher Dashboard Activity -->
+        <activity
+            android:name=".TeacherDashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".mapping.StudentCourseMappingActivity" />
+        <activity android:name=".mapping.TeacherCourseMappingActivity" />
+    </application>
+
+</manifest>
